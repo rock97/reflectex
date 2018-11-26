@@ -19,5 +19,8 @@ public class HelloServiceTest {
         enhancer.setCallback(new HelloMethodInterceptor());
         HelloService hs = (HelloService)enhancer.create();
         hs.sayHello("lizhihua");
+
+        HelloService hhh = new HelloServiceImpl();
+        hhh.sayHello("lizhihua");
     }
 }
